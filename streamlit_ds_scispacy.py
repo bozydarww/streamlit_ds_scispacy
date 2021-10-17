@@ -29,8 +29,8 @@ def main():
         raw_text = st.text_area("Sample Text","Myeloid derived suppressor cells (MDSC) are immature myeloid cells with immunosuppressive activity. They accumulate in tumor-bearing mice and humans with different types of cancer, including hepatocellular carcinoma (HCC).")
         docx = nlp(raw_text)
         if st.button("Analyse"):
-		print(labels=nlp.get_pipe('ner').labels)
-		spacy_streamlit.visualize_ner(docx,labels=nlp.get_pipe('ner').labels)
+	    print(labels=nlp.get_pipe('ner').labels)
+	    spacy_streamlit.visualize_ner(docx,labels=nlp.get_pipe('ner').labels)
 
     elif choice == "Tokenization":
         st.subheader("Tokenization")
