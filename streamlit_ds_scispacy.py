@@ -9,7 +9,7 @@ import spacy
 nlp = spacy.load("en_ner_bionlp13cg_md")
 
 import os
-from PIL import Image
+#from PIL import Image
 
 path = os.getcwd()
 # Print the current working directory
@@ -19,7 +19,7 @@ path = os.getcwd()
 def main():
     """A Simple NLP app with Spacy-Streamlit"""
     nweh_logo = Image.open(os.path.join('nweh_logo_sm.jpg')) 
-    st.image(nweh_logo)
+    #st.image(nweh_logo)
     st.title("NER **for** **processing** **biomedical** **,** **scientific** **or** **clinical** **text** **with** _spaCy_ **NLP**")
     st.markdown('**_(_ _pre-trained_ _CNN_ _model_ _with_ _English_ _language_ _)_**')
     menu = ["Named Entity Recognision","Tokenization"]
